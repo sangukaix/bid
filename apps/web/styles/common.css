@@ -657,3 +657,188 @@
     width: 100%;
   }
 }
+
+/* 입력 폼 페이지에서 반복해서 쓰는 간단한 레이아웃 스타일입니다. */
+.auth-page {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.auth-page--wide {
+  max-width: 760px;
+}
+
+.auth-card {
+  width: 100%;
+}
+
+.auth-switch {
+  margin: var(--space-4) 0 0;
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: 1fr;
+}
+
+.form-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--color-navy-900);
+  font-size: var(--font-size-lg);
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--color-gray-700);
+}
+
+.checkbox-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.checkbox-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.checkbox-grid--four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.checkbox-panel {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  padding: 0 var(--space-3);
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.form-footer--end {
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.onboarding-page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.stepper {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stepper__item {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: var(--space-2);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  background: var(--color-gray-100);
+  padding: var(--space-3);
+  color: var(--color-gray-700);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.stepper__item--active {
+  border-color: var(--color-blue-600);
+  background: var(--color-blue-50);
+  color: var(--color-blue-700);
+}
+
+.stepper__number {
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-white);
+  color: inherit;
+  font-size: var(--font-size-xs);
+}
+
+.stepper__title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.step-panel {
+  margin-top: var(--space-6);
+}
+
+@media (max-width: 900px) {
+  .form-grid--three,
+  .checkbox-grid--four,
+  .stepper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .form-grid--two,
+  .form-grid--three,
+  .checkbox-grid,
+  .checkbox-grid--three,
+  .checkbox-grid--four,
+  .stepper {
+    grid-template-columns: 1fr;
+  }
+
+  .form-footer {
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
+
+  .form-footer .button {
+    width: 100%;
+  }
+}
