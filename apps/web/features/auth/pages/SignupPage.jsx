@@ -1,0 +1,13 @@
+import PublicLayout from "@/components/layout/PublicLayout";
+
+export default function SignupPage() {
+  // Step 2.5에서는 공통 레이아웃만 적용하고, 실제 화면 내용은 아직 간단한 안내문으로 유지합니다.
+  return (
+    <PublicLayout>
+      <section className="placeholder-page">
+        <h1>회원가입</h1>
+        <p>새 사용자가 가입할 페이지입니다. 실제 회원가입 기능은 나중에 연결합니다.</p>
+      </section>
+    </PublicLayout>
+  );
+}

@@ -1,0 +1,40 @@
+/* 브라우저마다 다른 기본 여백과 글꼴 차이를 줄이는 초기화 파일입니다. */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--color-gray-50);
+  color: var(--color-gray-950);
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  font-size: var(--font-size-md);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}

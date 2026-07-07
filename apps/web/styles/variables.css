@@ -1,0 +1,43 @@
+:root {
+  /* 색상 변수는 프로젝트 전체에서 같은 색을 재사용하기 위해 모아둡니다. */
+  --color-navy-900: #0f172a;
+  --color-navy-800: #1e293b;
+  --color-blue-700: #1d4ed8;
+  --color-blue-600: #2563eb;
+  --color-blue-50: #eff6ff;
+  --color-gray-950: #111827;
+  --color-gray-700: #374151;
+  --color-gray-500: #6b7280;
+  --color-gray-300: #d1d5db;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
+  --color-white: #ffffff;
+  --color-green-600: #16a34a;
+  --color-green-50: #f0fdf4;
+  --color-orange-600: #ea580c;
+  --color-orange-50: #fff7ed;
+  --color-red-600: #dc2626;
+  --color-red-50: #fef2f2;
+
+  /* 글자 크기와 간격도 변수로 두면 화면 전체의 균형을 맞추기 쉽습니다. */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
